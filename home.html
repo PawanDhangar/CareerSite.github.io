@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  <title>AtMyGoals</title>
+  <link rel="icon" type="image/x-icon" href="/img/logo.jpg">
+      <style>
+       
+
+ /*@media screen and ( max-width:500px) {
+ input {
+   width: 200px;
+        }
+      }
+*/
+
+ .container .bg-image #centerlogo{
+ width: 120px;
+ height: 120px;
+border-radius: 80px;
+border: 3px solid red;
+
+}
+ 
+.container .bg-image h1{
+  
+ color: rgb(255, 255, 255) ;
+ }
+
+.container .bg-image h4{
+color: rgb(255, 251, 0);
+}
+
+.bg-image-1{
+background: linear-gradient(-45deg,rgba(179, 6, 185, 0.3),rgba(9, 189, 196, 0.1), rgba(209, 30, 6, 0.3)),url(img/./pc.jpg) ;
+
+ background-size: cover;
+ height: 180px;
+ display:flex;
+ margin-top: 5px;
+ margin-left: 4vh;
+  margin-right: 4vh;
+  margin-top: 30px;
+  margin-bottom: 30;
+ justify-content: center;
+ align-items: center;
+ border-radius: 8px;
+ 
+}
+
+ .bg-image-1 h2{
+
+color: white;
+text-shadow:3px 3px #000;
+font-size: 50px;
+padding: 5px 5px;
+border-radius: 5px;
+text-decoration: underline;
+
+
+}
+@media screen and (max-width: 550px) {
+  .bg-image-1 h2 {
+    font-size:40px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .bg-image-1 h2 {
+    font-size:30px;
+  }
+}
+h2:hover{
+text-shadow: 3px 2px rgb(15, 3, 3);
+padding: 5px 10px;
+border-radius: 5px;
+}
+
+#btn{
+	background-color: rgb(83, 172, 83);
+}
+#btn:hover{
+	background-color: rgb(63, 148, 63);
+}	
+.btn-2 a:hover {
+  background:url(/img/a.jpg);
+}
+
+.tx-1 a{
+  text-shadow : 3px -3px black;
+ }
+ .tx-1 a:hover{
+  text-shadow : 2px -2px black;
+ }
+ .lines {
+  
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.2em;
+   margin: 0 ;
+ font-size: 25px;
+ 
+ 
+  
+} 
+
+.lines span { 
+    background:#fff; 
+    padding:0 10px; 
+}
+#navss
+ {
+ margin:0;
+ padding:0;
+ 
+  background-color:#ffffff;
+  
+ 
+  }  
+#navss li a{
+  color: #000;
+  background-color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 22px;
+}
+#navss li a:hover  {
+  color: rgb(255, 246, 246);
+  background-color:rgb(83, 172, 83);
+}
+
+/*
+#buttonripple:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 2s
+}
+
+#buttonripple:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+
+@media screen and ( max-width:550px) {
+ #searchplace {
+   width: 60vh;
+   justify-content: center;
+   margin-left: 30px;
+        }
+      }
+   */
+
+
+ </style>
+  </head>
+  <body>
+    <div id="scrolltop">
+    </div>
+    <nav class="navbar sticky-top navbar-expand-lg " id="nav">
+      <a class="navbar-brand" href="/HOME.html"> <img  style="margin-left: 40px; " src="img/logo MU.png" class="img" ></a>
+       
+       <button  id="toogle" class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"></i> 
+           <span class="fa fa-fw fa-bars" id="bars-1"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" >
+               <b><a class="nav-link active px-3 "  aria-current="page" href="/HOME.html"><b>HOME</b></a></b>
+              </li>
+              <li class="nav-item">
+               <b> <a class="nav-link  px-3 scrollto" href="/TECH.html"><b>TECHGAINT</b></a></b>
+              </li>
+              <li class="nav-item">
+              <b> <a class="nav-link px-3" href="/E_COMM.html"><b>E_COMMERCE</b></a></b>
+              </li>
+              <li class="nav-item">
+              <b><a class="nav-link px-3 " href="/Automob.html"><b>AUTOMOBILE</b></a></b>
+              </li>
+              <li class="nav-item">
+              <b> <a class="nav-link px-3" href="/SPACE.html"><b>SPACE</b></a></b>
+              </li>
+              <li class="nav-item">
+              <b><a class="nav-link px-3" href="/itcompany.html"><b>IT_COMPANY</b></a></b>
+              </li>
+            </ul>
+             
+            <form class="d-flex">
+              <a class=" submit btn btn-outline-success text-center" href="./Form.html" role="button"><b><b>Login</b></b></a>
+             </form>
+             
+          </div>
+       
+      </nav>
+
+
+      <script>
+        function myFunction() {
+          var input, filter, ul, li, a, i;
+          input = document.getElementById("mySearch");
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myMenu");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+        </script>
+         
+
+       <div class="container">
+        <div class="bg-image">
+       <div class="text-white text-center" id="bg-image-items">
+        <img src="img/logo.jpg" class=" align-items-lg-center " id="centerlogo" ></a>
+        <h1 style="margin-top: 20px; "><b>Welcome to Our site</h1>
+        
+        <form method="get" action="/search" id="search">
+          <input name="q" type="text" size="40" placeholder="Search..." />
+        </form><h4><b>It's time to become more close to your goals</b></h4>
+        </div>
+       
+      </div>
+        </div>
+      
+
+
+    
+
+	<!--cards for detail-->
+  
+    <div class="container mt-lg-5 ">
+  <p class="lines"><span><i class="fa fa-laptop"></i><b> TECHGAINT</b></span></p>
+  
+  <div class="row row-cols-1 row-cols-md-4  ">
+    <div class="col">
+      <div class="card">
+        <img src="img/./Microsof (1).jpg" class="card-img-top " alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Microsoft</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="./Google.html" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img  src="img/ip.jpg" class="card-img-top"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Apple</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional contentnt.</p>
+          <a href="./Google.html" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/./meta.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b style="color: #000000;">Meta</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="./Google.html" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/./ac.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Alphabet</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="./Google.html" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12  pr-10"style="text-align: right;margin-right: 15px;">
+	<a href="./TECH.html" title="card view"  class="btn btn mt-4 m-xl-4" id="btn" style="color:white; "><b>view more </b><i class="fa fa-external-link"></i> </a>
+	</div>
+
+ 
+  <p class="lines"><span><i class="fa fa-gift"></i><b> E-COMMERCE</b></span></p>
+   <div class="row row-cols-1 row-cols-md-4 g-4 m-4">
+    <div class="col">
+      <div class="card">
+        <div id="brand">
+        <img src="img/./am.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><b>AMAZON</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="./amazon.html" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/./ptm.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>PAYTM</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional contentnt.</p>
+          <a href="Google.html" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/./flipkart.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>FLIPKART</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="Google.html" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/./ebay.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>EBAY</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="Google.html" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" col-md-12  pr-10" id="buttonripple" style="text-align: right;margin-right: 15px;">
+		<a href="./TECH.html" title="card view"  class="btn btn mt-4 m-xl-4" id="btn" style="color:white; "><b>view more </b><i class="fa fa-external-link"></i> </a>
+	</div>
+
+
+  <p class="lines"><span><i class="fa fa-car"></i><b> AUTOMOBILE</b></span></p>
+  
+  <div class="row row-cols-1 row-cols-md-4 g-4 m-4">
+    <div class="col">
+      <div class="card">
+        <img src="img/./TESLA.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>TESLA</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="Google.html" class="btn btn-primary text-lg-center">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/./Tata.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>TATA</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
+          <a href="Google.html" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/./volk.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>VOLKSWAGEN</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="Google.html" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/./hyu.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>HYUDAI</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
+          <a href="Google.html" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12  pr-10"style="text-align: right;margin-right: 15px;">
+		<a href="./TECH.html" title="card view"  class="btn btn mt-4 m-xl-4" id="btn" style="color:white; "><b>view more </b><i class="fa fa-external-link"></i> </a>
+	</div>
+
+
+
+<p class="lines"><span><i class="fa fa-rocket"></i><b> SPACE</b></span></p>
+<div class="row row-cols-1 row-cols-md-4 g-4 m-4" >
+  <div class="col">
+    <div class="card">
+      <img src="img/./isro.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><b>ISRO</b></h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <a href="Google.html" class="btn btn-primary text-lg-center">Know More</a>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/./spacex.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><b>SPACEX</b></h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
+        <a href="Google.html" class="btn btn-primary">Know More</a>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/./pockocmoc.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><b>POCKOCMOC</b></h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <a href="Google.html" class="btn btn-primary">Know More</a>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/./Nasa.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><b>NASA</b></h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
+        <a href="Google.html" class="btn btn-primary">Know More</a>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-12  pr-10" style="text-align: right;margin-right: 15px;">
+  <a href="./TECH.html" title="card view"  class="btn btn mt-4 m-xl-4" id="btn" style="color:white; "><b>view more </b><i class="fa fa-external-link"></i> </a>
+	</div>
+
+
+
+
+
+<p class="lines"><span><i class="fa fa-mixcloud"></i><b> INFORMATION TECHNOLOGY</b></span></p>
+
+  <div class="row row-cols-1 row-cols-md-4 g-4 m-3">
+    <div class="col">
+      <div class="card">
+        <img src="img/./TCS.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>TCS</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="google.com" class="btn btn-primary text-lg-center">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/./wipro.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>WIPRO</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
+          <a href="google.com" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/./Infosys.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>INFOSYS</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <a href="google.com" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/./HCL.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>HCL</b></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
+          <a href="google.com" class="btn btn-primary">Know More</a>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12 " style="text-align: right;margin-right: 15px;">
+		<a href="./E_LEAR.html" title="card view"  class="btn btn mt-4 m-xl-4" id="btn" style="color:white; "><b>view more </b><i class="fa fa-external-link"></i> </a>
+	</div>
+
+</div>
+<hr>
+  
+
+
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #3f51b5">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="tx-1 mt-5">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h5 class="text-uppercase font-weight-bold">
+              <a href="./about1.html" class="text-white"><b>About us</b></a>
+            </h5>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h5 class="text-uppercase font-weight-bold">
+              <a href="HOME.html" class="text-white" ><b>Products</b></a>
+            </h5>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h5 class="text-uppercase ">
+              <a href="#!" class="text-white"><b>Awards</b></a>
+            </h5>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h5 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white"><b>Help</b></a>
+            </h5>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h5 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white"><b>Contact</b></a>
+            </h5>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Text -->
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              distinctio earum repellat quaerat voluptatibus placeat nam,
+              commodi optio pariatur est quia magnam eum harum corrupti
+              dicta, aliquam sequi voluptate quas.
+            </p>
+          </div>
+        </div>
+</section>
+        <section class=" btn-2 mb-4">
+          
+         
+    
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary  btn-floating m-1"
+            style="background-color: #55acee;border: 3px solid rgb(253, 251, 251);border-radius: 30px;"
+            href="./about.html"
+            role="button"
+            id="btn-1"
+            ><i class="fa fa-twitter"></i></a>
+          <!-- Facebook -->
+          <a
+          class="btn btn-primary btn-floating m-1"
+          style="background-color: #3261c7;border: 3px solid rgb(253, 251, 251);border-radius: 25px;"
+          href="./about.html"
+          role="button"
+          ><i class="fa fa-facebook-square table-hover"id="btn-1"></i>
+         </a>
+    
+          <!-- Google -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #dd4b39;border: 3px solid rgb(253, 251, 251);border-radius: 30px;"
+            href="#!"
+            role="button"
+            ><i class="fa fa-google"id="btn-1"></i ></a>
+    
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ac2bac;border: 3px solid rgb(253, 251, 251);border-radius: 30px; "
+            href="#!"
+            role="button"
+            ><i class="fa fa-instagram"id="btn-1"></i></a>
+    
+          <!-- Linkedin -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #0082ca;border: 3px solid rgb(253, 251, 251);border-radius: 30px;"
+            href="#!"
+            role="button"
+            ><i class="fa fa-linkedin"id="btn-1"></i></a>
+          <!-- Github -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            
+            style="background-color: #333333;border: 3px solid rgb(253, 251, 251);border-radius: 30px;"
+            href="#!"
+            role="button"
+           
+            ><i class="fa fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+   
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2022 Copyright:
+      
+      
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >MDBootstrap.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <!--Top scroll-->
+  <div class="arrow">
+    <a href="#scrolltop" title="Back to Top"><span class="fa fa-arrow-circle-up"></span></a>
+ </div>
+
+
+ </body>    
+</html>

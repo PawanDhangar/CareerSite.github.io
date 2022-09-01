@@ -1,0 +1,234 @@
+body {font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+  }
+  #nav
+   {
+  
+   margin:0;
+   padding:0;
+   background-color:#ffffff;
+   box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.445);
+   border-bottom: 1px solid rgba(0, 0, 0, 0.541);
+  
+    }  
+  #nav:hover
+    {
+        background-color: none;
+        color:white;
+       
+    }
+   
+    #toogle{
+      border-color:black;
+       background-color:rgb(255, 255, 255);
+       margin: 10px;
+       justify-content: end;
+    }
+    #bars-1{
+     width: 20px;
+     height: 10px ;
+   }
+   #nav button
+   {
+      border-color:white;
+      background-color: none;
+      color: #000; 
+   }
+   #nav li a{
+     background-color: none;
+     color:rgb(0, 0, 0);
+     padding: 15px 0;
+     margin: 0 ;
+    text-decoration: none;
+    overflow: hidden;
+   
+   }
+  
+   #nav li a:hover { 
+  
+   background-color:white;
+   color:green;
+   border-bottom: 3px solid red;
+   background-origin: padding-box;
+   }
+  
+  
+  .nav-link{
+    color: white;
+  }
+  .active {
+    
+    border-bottom: 3px solid red;
+  }
+  
+  .img{
+    width: 45px;
+    height: 45px;
+    
+    margin-right: 20px;
+    margin-left: 20px;
+   
+    
+   }
+  .submit{
+   width: 100px;
+   
+   color: rgb(0, 0, 0);
+   margin-right: 20px;
+   border-radius: 5px; 
+  }
+  
+  .searchbutton{
+  
+  right: 0;
+  box-shadow: 1px 2px 0 1px #000;
+  color:white;
+  
+  width: 60px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-right: 12px;
+  }
+  .searchbutton:hover{
+   background-color: rgb(63, 148, 63);
+   color: white;
+  }
+  .search:hover{
+    color:#fff;
+    }
+  #bolt:hover{
+  color: rgb(0, 0, 0);
+  }
+  
+  /*
+  .container
+  {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-bottom: 5px;
+  }*/
+  .card {
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #fff;
+   
+     }
+  .card:hover {
+   box-shadow: 0 20px 24px 12px rgba(0, 0, 0, 0.3);
+   border: 3px solid rgb(38, 41, 182);
+   animation: zoom-in-zoom-out 1s ease infinite;
+    
+    }
+  
+  /*
+  .about-section {
+   padding: 50px;
+   text-align: center;
+   background-color: #474e5d;
+   color: white;
+  }*/
+  
+  .card-body{
+   padding: 0 16px;
+   text-align: center;
+   
+  }
+  
+  .title {
+   color: grey;
+  }
+  
+  .topscroll {
+    position: relative;
+    display: none;
+    position: fixed;
+    visibility: hidden;
+  }
+  
+  .arrow{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9;
+  }
+  .arrow a{
+    height: 37px;
+    width: 39px;
+    text-align: center;
+    justify-content: center;
+    background: #1b1b1b;
+    display:block;
+    border-radius: 25px;
+  }
+  .arrow a span{
+    color: #f2f2f2;
+    font-size: 25px;
+    line-height: 35px;
+    cursor: pointer;
+    box-shadow:3px 3px 10px 0 rgba(0, 0, 0, 0.459);
+  }
+  .arrow a:hover{
+    background-color: #2161bc;
+  }
+  
+  
+  
+  
+  #search input[type="text"] {
+      background:  10px 6px rgb(255, 255, 255);
+      border: 0 none;
+      font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+      color: #d7d7d7;
+      width:250px;
+      padding: 6px 15px 6px 35px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); 
+      -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+      -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+      -webkit-transition: all 0.7s ease 0s;
+      -moz-transition: all 0.7s ease 0s;
+      -o-transition: all 0.7s ease 0s;
+      transition: all 0.7s ease 0s;
+      margin-bottom: 10px;
+      }
+  
+  #search input[type="text"]:focus {
+      background: 10px 6px #fcfcfc;
+      color: #000000;
+      width: 300px;
+      -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+      -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      }
+      .container .bg-image{
+      
+        background:url(/img/./kc.jpg);
+        background-repeat: repeat;
+         background-attachment: fixed;
+         background-size: cover;
+         background-size: cover;
+         height: 400px;
+         display:flex;
+         margin-top: 50px;
+         margin-bottom: 70px;
+         justify-content: center;
+         align-items: center;
+       
+         box-shadow: 3px 12px 30px ;
+          
+        }
+        .cardinfo h6{
+    
+          border-bottom: 1px solid rgba(78, 72, 72, 0.377);
+          padding: 5px;
+           }
+           
